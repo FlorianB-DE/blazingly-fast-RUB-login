@@ -1,0 +1,13 @@
+[Unit]
+Description=Auto-login to RUB RZ
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/ssd1/blazingly-fast-RUB-login
+Type=simple
+Restart=on-failure
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target
