@@ -6,10 +6,10 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-local-ip-address = "0.5.3"
+local-ip-address = "0.5.7"
 confy = { version = "0.5.1", features = [
     "toml_conf",
 ], default-features = false }
-serde = "1.0.163"
-serde_derive = "1.0.163"
-reqwest = { version = "0.11", default-features = false, features = ["blocking", "rustls-tls-native-roots"] }
+serde = "1.0.229"
+serde_derive = "1.0.229"
+reqwest = { version = "0.11.27", default-features = false, features = ["blocking", "rustls-tls-native-roots"] }
